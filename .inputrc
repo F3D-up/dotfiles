@@ -1,0 +1,18 @@
+#prettify
+
+set colored-stats on
+set colored-completion-prefix on
+
+#completion
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
+# Command history search
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Bash Keybindings
+"\C-f":"cd /mnt/c/Faks\n"
+"\C-,":"cd -\n"
+"\C-\b":backward-kill-word
+"\C-.":"cd ..\n"

@@ -1,0 +1,7 @@
+source /usr/share/doc/fzf/examples/key-bindings.bash
+source /usr/share/bash-completion/completions/fzf
+
+export FZF_DEFAULT_COMMAND="fd --hidden --exclude '.git' --exclude '.vscode-server'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
+export FZF_CTRL_T_OPTS=" --preview 'batcat -n --color=always {}'"
