@@ -1,2 +1,2 @@
 #!/bin/sh
-git clone https://github.com/tmux-plugins/tpm /home/jetnova/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm /home/$USER/tmux/plugins/tpm
