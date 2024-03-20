@@ -7,8 +7,7 @@ dotadd () {
 }
 
 dotcommit () {
- /usr/bin/git --git-dir=/home/$USER/dotfiles --work-tree=/home/$USER commit -m "$1";
- 
+ /usr/bin/git --git-dir=/home/$USER/dotfiles --work-tree=/home/$USER commit -m "$1"; 
 }
 
 dotpush () {
@@ -17,9 +16,11 @@ dotpush () {
 
 dotgit () {
   /usr/bin/git --git-dir=/home/$USER/dotfiles --work-tree=/home/$USER $@;
-
 }
 
+dotuntrack () {
+  /usr/bin/git --git-dir=/home/$USER/dotfiles --work-tree=/home/$USER config --local status.showUntrackedFiles no;
+}
 #create a directory and all parent directories and move into it
 mkpcd () { mkdir -pv $1; cd $1; }
 
