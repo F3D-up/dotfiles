@@ -140,4 +140,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PATH=~/.console-ninja/.bin:~/.local/bin:$PATH
+PATH=~/.local/bin:$PATH
+PATH=/snap/bin:$PATH
+PATH=~/.console-ninja/.bin:$PATH

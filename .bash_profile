@@ -33,5 +33,5 @@ if [ ! -e "$HOME/.local/bin/fd" ] && which fdfind &> /dev/null; then
         ln -s $(which fdfind) ~/.local/bin/fd;
 fi
 
-PATH=~/.console-ninja/.bin:~/.local/bin:$PATH
+PATH=/snap/bin:~/.console-ninja/.bin:~/.local/bin:$PATH
 
