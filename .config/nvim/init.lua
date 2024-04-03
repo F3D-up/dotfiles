@@ -25,6 +25,8 @@ vim.opt.rtp:prepend(lazypath)
 local opts = {}
 
 require("lazy").setup("plugins")
-vim.api.nvim_create_augroup("cursorfix", {clear = true})
-vim.api.nvim_create_autocmd({"VimLeave", "VimSuspend"}, {
-command = "set guicursor=a:ver1-blinkon1", group = "cursorfix"})
+vim.api.nvim_create_augroup("cursorfix", { clear = true })
+vim.api.nvim_create_autocmd({ "VimLeave", "VimSuspend" }, {
+  command = "set guicursor=a:ver1-blinkon1",
+  group = "cursorfix",
+})
