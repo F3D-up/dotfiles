@@ -1,0 +1,11 @@
+.vscode-server
+.git
+.vscode
+snap
+dotfiles
+.dotnet
+.local
+.docker
+.tldrc
+.cache
+.tmux
