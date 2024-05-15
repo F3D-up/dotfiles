@@ -37,3 +37,12 @@ vim.api.nvim_create_autocmd({ "VimLeave", "VimSuspend" }, {
   command = "set guicursor=a:ver1-blinkon1",
   group = "cursorfix",
 })
+
+vim.diagnostic.config({
+  virtual_text = {
+    severity = {
+      min = vim.diagnostic.severity.ERROR
+    }
+  },
+})
+
